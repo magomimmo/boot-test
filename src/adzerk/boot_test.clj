@@ -6,7 +6,7 @@
 
 (def base-pod-deps
   '[[org.clojure/tools.namespace "0.2.11" :exclusions [org.clojure/clojure]]
-    [pjstadig/humane-test-output "0.6.0"  :exclusions [org.clojure/clojure]]])
+    [pjstadig/humane-test-output "0.7.1" :exclusions [org.clojure/clojure]]])
 
 (defn init [requires fresh-pod]
   (dorun (map (partial pod/require-in fresh-pod) requires))
